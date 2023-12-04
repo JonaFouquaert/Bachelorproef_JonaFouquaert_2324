@@ -20,22 +20,44 @@
 
 %Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
 
-Geografische informatiesystemen (GIS) zijn digitale systemen die geografische gegevens analyseren, visualiseren en beheren om ruimtelijke patronen en relaties te begrijpen. Het wordt vandaag de dag door bedrijven gebruikt in verschillende sectoren. Nu er vraag is naar GIS applicaties zijn er ook onderneming die zich specialiseren in deze trend. Zoals bijvoorbeeld het bedrijf geoAI. Zij combineren geo IT met het experimentiële veld van machine learning. Dit kan ingezet worden om verschillende doeleinden te bereiken zoals bijvoorbeeld automatische kaartgeneratie, voorspellende modellering enz... . Het thema waar wij ons op gaan focussen is geospatiale patroonherkenning. Dit gaat over het vinden van verborgen relaties tussen verschillende objecten. Hier komt de sterkte van AI naar boven. Het is in staat patronen te ontdekken die wij als mensen moeilijk begrijpen. Voor dit onderzoek gaan we een convolutional neural network (cnn) gebruiken. Deze keuze steunt op het feit dat CNN's het vermogen hebben om tegelijkertijd features te extraheren, de datadimensionaliteit te verminderen en in één netwerkstructuur te classificeren. Concreet gezegd gaan we proberen een model te maken dat verborgen patronen kan halen uit geospatiale data. Het doel is tot een zogoed mogelijk werkend model te bekomen.
+Geografische informatiesystemen (GIS) zijn digitale systemen die geografische gegevens analyseren, visualiseren en beheren om ruimtelijke 
+patronen en relaties te begrijpen. Het wordt vandaag de dag door bedrijven gebruikt in verschillende sectoren. 
+Nu er vraag is naar GIS-applicaties, zijn er ook ondernemingen die zich specialiseren in deze trend, zoals bijvoorbeeld het bedrijf geoAI. 
+Zij combineren geo IT met het experimentele veld van machine learning. Dit kan ingezet worden om verschillende doeleinden te bereiken, zoals
+bijvoorbeeld automatische kaartgeneratie, voorspellende modellering, \ldots. 
+Het thema waar wij ons op gaan focussen is geospatiale patroonherkenning. Dit gaat over het ontdekken van verborgen relaties tussen 
+verschillende objecten. Hier komt de sterkte van AI naar boven. Het is in staat patronen te ontdekken die wij als mensen moeilijk begrijpen. 
+Meer specifiek ga ik remote sensing classificatie toepassen op lidar data om zo vooraf bepaalde klassen te visualiseren. Het model dat ik ga 
+gebruiken is het Convolutional Neural Network (CNN), een deep learning-algoritme dat in staat is hiërarchische kenmerken in afbeeldingen 
+te visualiseren. CNN's delen de afbeeldingen op in kleine delen a.d.h.v. convolutionele lagen. Hiermee kunnen ze een afbeelding volledig apart
+analyseren. Voor dit onderzoek maak ik gebruik van het opensource QGIS-programma en de Semi-Automatic Classification en clusteranalyse-plug-ins.
+Concreet is de onderzoeksvraag: Hoe kunnen verborgen relaties tussen verschillende geospatiale objecten worden 
+blootgelegd met behulp van de Deepness: Deep Neural Remote Sensing en clusteranalyse plug-ins in QGIS, gebruikmakend van Convolutional 
+Neural Networks (CNN) en clusteralgoritmes?
+Deelvragen: 
+- Wat zijn de optimale architectuur en hyperparameters voor het CNN-algoritme bij het identificeren van relaties tussen objecten?
+- Zijn er factoren zoals terreinomstandigheden, seizoenen of landgebruik die de prestaties van het CNN-algoritme beïnvloeden bij de identificatie van bepaalde objecten?
+- Welke parameters en instellingen zijn van invloed op de resultaten van de clusteringalgoritmes in QGIS?
+- In hoeverre verschillen de resultaten van de Agglomerative Hierarchical en K-Means clusteringalgoritmes op onze dataset?
+
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+% Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+% Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+% Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+% Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
 
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+% Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+
+Net zoals bij andere competenties speelt machine learning een alsmaar grotere rol in geografische applicaties. 
+Convolutional Neural Networks (CNN's) 
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -44,31 +66,40 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+% Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+% Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+% Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+% Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+% Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
 
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+% Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
+Dit onderzoek mond uit op het uitvoeren van verschillende experimenten om zo te achterhalen of er verborgen relaties tussen objecten kunnen 
+worden waargenomen. Een experiment wordt opgedeeld in drie grote lijnen: preprocessing, object detection en post-analyse. 
+Preprocessing wordt uitgevoerd door de pixels en resolutie van de input layer te specificeren. 
+Vervolgens wordt er een Open Neural Network Exchange (ONNX) model gekozen dat getraind is voor een gelijkaardig project.
+De parameters van het model zijn dan meestal reeds gefinetuned. In de plugin-interface kun je ze nog aanpassen.
+De output van het gekozen model is een vectorlaag met de verschillende objecten gemarkeerd. 
+Deze vectorlaag wordt de input van de tweede plugin die wordt gebruikt: clusteranalyse. Deze plugin voert een unsupervised cluster 
+algoritme (Agglomerative Hierarchical of K-Means) uit op een gekozen vectorlaag. Ook hier wordt nog wat preprocessing uitgevoerd.
+Door feature cleaning toe te passen vallen nutteloze features weg. Vervolgens kun je op de data ook nog scaling 
+toepassen (Normalized of Standardized). Nadien worden het algoritme en het aantal clusters gekozen.
+De output is een nieuwe vectorlaag met de clusters afgebeeld. Ten slotte maak ik gebruik van de analysetools ingebouwd in QGIS, 
+door vectorpunten te verbinden en zo een overzicht te krijgen van mogelijke relaties tussen verschillende objecten.
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+% Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+% Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
-
+% Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
