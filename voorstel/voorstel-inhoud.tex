@@ -19,26 +19,46 @@
 %Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
 
 %Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
-
+\textcolor{hogent-purple}{Geo-ICT is de toepassing van informatie- en communicatietechnologie in de geografie. Een belangrijk component van Geo-ICT is het programma GIS.
 Geografische informatiesystemen (GIS) zijn digitale systemen die geografische gegevens analyseren, visualiseren en beheren om ruimtelijke 
 patronen en relaties te begrijpen. Het wordt vandaag de dag door bedrijven gebruikt in verschillende sectoren. 
-Nu er vraag is naar GIS-applicaties, zijn er ook ondernemingen die zich specialiseren in deze trend, zoals bijvoorbeeld het bedrijf geoAI. 
-Zij combineren geo IT met het experimentele veld van machine learning. Dit kan ingezet worden om verschillende doeleinden te bereiken, zoals
-bijvoorbeeld automatische kaartgeneratie, voorspellende modellering, \ldots. 
-Het thema waar wij ons op gaan focussen is geospatiale patroonherkenning. Dit gaat over het ontdekken van verborgen relaties tussen 
-verschillende objecten. Hier komt de sterkte van AI naar boven. Het is in staat patronen te ontdekken die wij als mensen moeilijk begrijpen. 
-Meer specifiek ga ik remote sensing classificatie toepassen op lidar data om zo vooraf bepaalde klassen te visualiseren. Het model dat ik ga 
-gebruiken is het Convolutional Neural Network (CNN), een deep learning-algoritme dat in staat is hiërarchische kenmerken in afbeeldingen 
-te visualiseren. CNN's delen de afbeeldingen op in kleine delen a.d.h.v. convolutionele lagen. Hiermee kunnen ze een afbeelding volledig apart
-analyseren. Voor dit onderzoek maak ik gebruik van het opensource QGIS-programma en de Semi-Automatic Classification en clusteranalyse-plug-ins.
-Concreet is de onderzoeksvraag: Hoe kunnen verborgen relaties tussen verschillende geospatiale objecten worden 
-blootgelegd met behulp van de Deepness: Deep Neural Remote Sensing en clusteranalyse plug-ins in QGIS, gebruikmakend van Convolutional 
-Neural Networks (CNN) en clusteralgoritmes?
-Deelvragen: 
-- Wat zijn de optimale architectuur en hyperparameters voor het CNN-algoritme bij het identificeren van relaties tussen objecten?
-- Zijn er factoren zoals terreinomstandigheden, seizoenen of landgebruik die de prestaties van het CNN-algoritme beïnvloeden bij de identificatie van bepaalde objecten?
-- Welke parameters en instellingen zijn van invloed op de resultaten van de clusteringalgoritmes in QGIS?
-- In hoeverre verschillen de resultaten van de Agglomerative Hierarchical en K-Means clusteringalgoritmes op onze dataset?
+Nu er vraag is naar GIS-applicaties, zijn er ook ondernemingen die zich specialiseren in deze trend, zoals bijvoorbeeld het bedrijf GeoAI. 
+Zij combineren Geo-ICT met het experimentele veld van machine learning. Dit kan ingezet worden om verschillende doeleinden te bereiken, zoals
+bijvoorbeeld automatische kaartgeneratie, voorspellende modellering, \ldots.}
+\newline
+Het thema waar ik me op focus is geospatiale remote sensing change detection. Dit gaat over het ontdekken van veranderingen in een bepaald landschap.
+Hier komt de sterkte van AI naar boven. Het is in staat patronen te ontdekken die wij als mensen moeilijk begrijpen.
+Deze studie is gericht op het bestuderen van de aanwezigheid van vegetatie in de stad Gent tussen de periode van 2020-2024. 
+De dataset bestaat uit afbeeldingen genomen door de Sentinel 2 satelliet. Tijdens het onderzoek ga ik verschillende machine learning 
+algoritmes (Support Vector Machines (SVM), Random Forests, Convolutional Neural Networks (CNNs), Siamese Networks en Vision transformer) 
+testen op de dataset. Het model moet in staat zijn vegetatie te detecteren en ook het verschil tussen de twee periodes te visualiseren. 
+Het open-sourceplatform QGIS wordt gebruikt om de data te verkrijgen en te visualiseren.
+\newline
+\textcolor{hogent-yellow}{De onderzoeksvraag: Welk machine learning-model is het meest geschikt voor het nauwkeurig detecteren en visualiseren van de
+veranderingen in aanwezigheid van vegetatie in de stad Gent tussen 2020 en 2024, met behulp van remote sensing change detection?}
+\newline
+\textcolor{hogent-darkgreen}{De deelvragen:
+\newline
+- Welke object klasse (vegetatie, bebouwing, wegen enz \ldots) toont de grootste veranderingen in percentage tussen de twee tijdstippen?
+\newline
+- Zijn er specifieke patronen in de veranderingen, zoals groei, afname of stabiliteit van groen in bepaalde delen van de stad?
+\newline
+- Zijn er ruimtelijke patronen in de veranderingen van vegetatie in de stad Gent?
+\newline
+- Is er een verschil tussen handmatige feature-extractie en automatische extractie op basis van deep learning, en wat is de impact hiervan op de resultaten?
+\newline
+- Welke evaluatie methoden zijn het meest geschikt om de prestaties van het model te beoordelen?
+\newline
+- Hoe wordt de balans gemeten tussen nauwkeurigheid en andere prestatie-indicatoren, zoals recall of precision?
+\newline
+- Welke criteria bepalen of een model als `acceptabel' wordt beschouwd?
+\newline
+- Is één dataset voldoende om de generaliseerbaarheid van het model te garanderen?
+\newline
+- Hoe wordt omgegaan met mogelijke bias of beperkingen in de gebruikte datasets?
+\newline
+- Welke preprocessing-stappen zijn nodig om de datasets geschikt te maken voor model input?}
+
 
 
 %---------- Stand van zaken ---------------------------------------------------
@@ -56,8 +76,41 @@ Deelvragen:
 
 % Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
 
-Net zoals bij andere competenties speelt machine learning een alsmaar grotere rol in geografische applicaties. 
-Convolutional Neural Networks (CNN's) 
+% Change detecion
+Change detection (CD) is het waarnemen van verandering in een bepaald gebied aan de hand van afbeeldingen genomen op verschillende tijden 
+\autocite{SINGH_1989}. Machine learning wordt al geruime tijd toegepast op CD. Maar in de laatste jaren heeft de opkomst van verschillende 
+nieuwere algoritmen het veld verbreed. Zo worden verschillende studies gedaan rond de impact van deep learning neurale netwerken op CD,
+zoals het onderzoek van \textcite{Bai_2022} over Deep Learning Change Detection (DLCD). Deep learning brengt een groot voordeel met zich 
+mee, namelijk dat het in staat is om automatische feature extractie toe te passen op ruwe data zoals bewezen in de studie van \textcite{LeCun_2015}.
+De meest voorkomende algoritmen zijn de CNN, Vision transformer en Siamese neurale netwerken. 
+% Siamese networks
+Siamese networks zijn voor het eerst voorgesteld in het onderzoek van \textcite{NIPS1993_288cc0ff}. Het is een algoritme dat bestaat uit
+twee of meerdere identieke neurale netwerken met dezelfde weights en biases die samenkomen tot één output \autocite{Serrano_2023}. 
+Een van de grootste voordelen ligt in het feit dat het in staat is accurate predicties te maken met weinig input data. 
+Het wordt daarom ook wel het one-shot model genoemd \autocite{koch2015siamese}. 
+% CNN
+Convolutional neurale netwerken worden gezien als één van de beste machine learning algoritmes als het aankomt op visualisatietaken. De afbeelding wordt opgedeeld 
+in kleine deeltjes aan de hand van filters, die dan allemaal geanalyseerd worden op een kleinere schaal \autocite{Geron2022}. Dit maakt het ideaal om hierarchische 
+features en patronen te ontdekken in de input data.
+% Vision Transformer
+Transformers zijn neurale netwerken die uitsluitend bestaan uit attention layers voorgesteld in het onderzoek van \textcite{Vaswani2017}.
+Attention is een methode om alleen relevante input data te verwerken in plaats van de hele batch \autocite{Geron2022}. 
+Dit vermindert de trainingstijd zonder de nauwkeurigheid van het model significant te beïnvloeden. Vision transformer (ViT) is 
+een transformer gebouwd voor visuele taken. Oorspronkelijk geïntroduceerd in de studie van \textcite{dosovitskiy2020image}. 
+Vision Transformers (ViTs) zijn, dankzij de transformer-architectuur, bijzonder goed afgestemd op grootschalige datasets, 
+wat bijdraagt aan hun huidige populariteit.
+% Non Deep Learning modellen
+Buiten deep learning zijn er ook nog andere AI modellen die gebruikt worden voor CD.
+Deze studie focust op twee modellen: Support Vector Machines (SVM) en Random Forests.
+% SVM
+SVM's, oorspronkelijk geïntroduceerd in het onderzoek van \textcite{cortes1995support}, maken gebruik van feature extraction om zo een 
+decision boundary (hyperlane) te bouwen die de veranderingen in het gebied scheidt van het onveranderde deel. 
+Er zijn al verschillende studies gedaan rondom het gebruik van support vector machines voor CD, zoals \textcite{bovolo2008novel} en \textcite{Habib_2009}
+% Random forests
+Random forests is een ensemble learning model dat bestaat uit meerdere decision trees, 
+waarbij elke tree gebaseerd is op willekeurige vectoren met dezelfde verdeling \autocite{Breiman_2001}. Meerdere studies zoals 
+\textcite{Wessels_2016} en \textcite{Feng_2018} tonen aan dat random Forest geschikt is voor change detection.
+
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -82,18 +135,32 @@ Convolutional Neural Networks (CNN's)
 
 % Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
-Dit onderzoek mond uit op het uitvoeren van verschillende experimenten om zo te achterhalen of er verborgen relaties tussen objecten kunnen 
-worden waargenomen. Een experiment wordt opgedeeld in drie grote lijnen: preprocessing, object detection en post-analyse. 
-Preprocessing wordt uitgevoerd door de pixels en resolutie van de input layer te specificeren. 
-Vervolgens wordt er een Open Neural Network Exchange (ONNX) model gekozen dat getraind is voor een gelijkaardig project.
-De parameters van het model zijn dan meestal reeds gefinetuned. In de plugin-interface kun je ze nog aanpassen.
-De output van het gekozen model is een vectorlaag met de verschillende objecten gemarkeerd. 
-Deze vectorlaag wordt de input van de tweede plugin die wordt gebruikt: clusteranalyse. Deze plugin voert een unsupervised cluster 
-algoritme (Agglomerative Hierarchical of K-Means) uit op een gekozen vectorlaag. Ook hier wordt nog wat preprocessing uitgevoerd.
-Door feature cleaning toe te passen vallen nutteloze features weg. Vervolgens kun je op de data ook nog scaling 
-toepassen (Normalized of Standardized). Nadien worden het algoritme en het aantal clusters gekozen.
-De output is een nieuwe vectorlaag met de clusters afgebeeld. Ten slotte maak ik gebruik van de analysetools ingebouwd in QGIS, 
-door vectorpunten te verbinden en zo een overzicht te krijgen van mogelijke relaties tussen verschillende objecten.
+
+Het uiteindelijke doel van dit onderzoek is het ontwikkelen van een machine learning-pijplijn die effectief veranderingen 
+kan detecteren tussen de aanwezigheid van vegetatie tussen twee tijdstippen. Dit is een vergelijkende studie, 
+waarbij verschillende machine learning modellen getest worden. 
+De eerste taak is het samenstellen van twee datasets opgebouwd uit satellietfoto's van Sentinel 2. 
+Dataset 1 zal bestaan uit afbeeldingen van Gent in 2020 (t₁).  
+De tweede dataset bestaat uit satellietfoto's van Gent in 2024 (t₂). 
+Hiermee gaan we veranderingen proberen waar te nemen door ze te vergelijken met de afbeeldingen van t₁ met behulp van machine learning.
+De datasets zijn opgedeeld in drie delen: trainging (60\%), validatie (20\%) en testing (20\%).
+Training om het model te trainen. Validatie om te controleren hoe goed het model werkt op data die het niet eerder heeft gezien. 
+Dit zorgt ervoor dat het model beter generialiseerd tijdens de testing fase. Testing om het model te evalueren. 
+Bovendien moet de dataset goed gerepresenteerd zijn, zodat de accuraatheid van het model niet lijdt onder gelijkaardige situaties 
+(het model moet in staat zijn de objecten te detecteren tijdens de verschillende seizoenen).
+Elk vooraf gedefinieerd model wordt getraind en getest op de data. Het is niet de bedoeling om ze vanaf nul op te bouwen. Er wordt 
+gebruik gemaakt van pretrained modellen. Dit deel van de studie zal herhaaldelijk worden toegepast op de dataset. Eerst passen we 
+preprocessing toe op de datasets. In dit geval wordt herschalen toegepast om alle afbeeldingen dezelfde grootte te geven (Data Augmentatie). 
+De data wordt gelabeld aan de hand van semantische segmentatie. Een computer vision taak waarbij elke pixel tot een bepaalde klasse/object wordt 
+geclassifiseerd. Dit resulteerd in een segmentatie kaart waarin elk object (bv. vegetatie, gebouw, straat enz.) wordt aangeduid. Objecten 
+van t₁ worden vergeleken met objecten van t₂. De veranderingen worden gedetecteerd door gemiddelde kleur, grootte en 
+verschil in vorm van een object. Vervolgens worden de verschillen tussen t₁ en t₂ geclassifiseerd. Hierbij wordt niet alleen 
+verandering aangeduid maar ook waarin objecten zijn veranderd. Voor de evaluatie worden een aantal metrieken gebruikt. De belangrijkste 
+hieronder is de vegetation condition index (VCI). De VCI vergelijkt de NDVI-waarden van twee tijdstippen (t₁ en t₂) om veranderingen 
+in vegetatiebedekking te berekenen. Andere evaluatie methoden zoals confusiematrix-methoden (precision en recall) en IoU (Intersection over Union)
+worden ook gebruikt. De twee belangrijkste python machine learning frameworks die gebruikt zullen worden tijdens deze studie zijn TensorFlow en scikit-learn.
+
+
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
@@ -103,3 +170,15 @@ door vectorpunten te verbinden en zo een overzicht te krijgen van mogelijke rela
 % Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
 
 % Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+
+Voor het technische aspect van deze studie wordt verwacht dat de deep learning modellen, zoals Convolutional Neural Networks (CNN), 
+Vision Transformers en Siamese netwerken, betere prestaties zullen leveren in vergelijking met Support Vector Machines (SVM) en 
+Random Forests. Recente onderzoeken ondersteunen deze verwachting door aan te tonen dat deep learning algoritmen doorgaans 
+superieure resultaten behalen, met name bij complexe taken zoals geospatiale veranderingendetectie.
+\newline
+Met betrekking tot de veranderingen in vegetatiebedekking binnen Gent wordt een lichte toename verwacht in vergelijking met 2020, 
+gebaseerd op trends in stedelijke vergroening en gerelateerde ecologische initiatieven in de regio.
+\newline
+Dit onderzoek gaat over het detecteren van veranderingen in de vegetatie in een stedelijk gebied. Het is gericht naar organisaties 
+die het behoud van de natuur op zich nemen. Zo kunnen rapporten met zulke studies een call to action worden voor het verder 
+behouden van onze natuur.

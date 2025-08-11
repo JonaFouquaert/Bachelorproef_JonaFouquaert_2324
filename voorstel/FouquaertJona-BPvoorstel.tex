@@ -13,18 +13,18 @@
 
 % Informatie over de opleiding, het vak en soort opdracht
 \studyprogramme{Professionele bachelor toegepaste informatica}
-\course{Bachelorproef}
+\course{Bachelorproef}	
 \assignmenttype{Onderzoeksvoorstel}
 % Voor een voorstel in het Engels, haal de volgende 3 regels uit commentaar
 % \studyprogramme{Bachelor of applied information technology}
 % \course{Bachelor thesis}
 % \assignmenttype{Research proposal}
 
-\academicyear{2023-2024} % TODO: pas het academiejaar aan
+\academicyear{2024-2025} % TODO: pas het academiejaar aan
 
 % TODO: Werktitel
 %\title{AI zal relaties tussen verschillenden objecten binnen een geografische/ruimtelijke omgeving vaststellen en situaties herkennen.}
-\title{Een proof of concept van object detection waarbij verborgen relaties kunnen worden vastgesteld in een GIS georienteerde casestudy adhv Deep Learning}
+\title{Diepgaande Analyse van Geospatiale Veranderingen: Een Vergelijkende Studie van Machine Learning Modellen in Remote Sensing Change Detection voor de Vegetatie van Gent (2020-2024)}
 
 % TODO: Studentnaam en emailadres invullen
 \author{Jona Fouquaert}
@@ -37,7 +37,7 @@
 % \email{yasmine.alaoui@student.hogent.be}
 
 % TODO: Geef de co-promotor op
-\supervisor[Co-promotor]{S. Beekman (Synalco, \href{mailto:sigrid.beekman@synalco.be}{sigrid.beekman@synalco.be})}
+\supervisor[Co-promotor]{C. Stal (Hogent, \href{mailto:cornelis.stal@hogent.be}{cornelis.stal@hogent.be})}
 
 % Binnen welke specialisatierichting uit 3TI situeert dit onderzoek zich?
 % Kies uit deze lijst:
@@ -47,16 +47,45 @@
 % - Functional \& Business Analysis
 % - System \& Network Administrator
 % - Mainframe Expert
-% - Als het onderzoek niet past binnen een van deze domeinen specifieer je deze
-%   zelf
-%
+% - Als het onderzoek niet past binnen een van deze domeinen specifieer je deze zelf
+
 \specialisation{AI \& Data Engineering}
-\keywords{object detection, GIS, deep learning}
+\keywords{Change detection (CD), GEO-ICT, QGIS, Machine learning, Natuurbehoud}
 
 \begin{document}
 
 \begin{abstract}
-  Geografische informatiesystemen (GIS) zijn digitale systemen die geografische gegevens analyseren, visualiseren en beheren om ruimtelijke patronen en relaties te begrijpen is geworteld in de geografie
+
+% Dit onderzoek bestudeert geavanceerde machine learning-modellen voor het detecteren van vegetatieveranderingen in Gent (2020-2024). 
+% De focus ligt op geospatiale remote sensing change detection in een stedelijke omgeving, waarbij diverse algoritmes, waaronder SVM, Random Forests, CNNs, 
+% Siamese Networks en Vision Transformers worden getest op Sentinel 2-beelden. QGIS wordt gebruikt voor gegevensverwerking en visualisatie.
+% De onderzoeksvraag richt zich op veranderingen in vegetatie in Gent tussen 2020 en 2024, met de nadruk op het meest geschikte
+% machine learning-model voor nauwkeurige detectie en visualisatie. Deelvragen behandelen gebieden met grote veranderingen en 
+% ruimtelijke patronen. De state-of-the-art sectie benadrukt de evolutie van change detection, met aandacht voor deep learning 
+% (CNNs, Vision Transformers en Siamese networks) en traditionele modellen zoals SVM en Random Forests.
+% De methodologie omvat de bouw van twee datasets uit Sentinel 2-beelden, semi-automatische labeling met QGIS, en het gebruik van 
+% pre-trained modellen met iteratieve preprocessing, training en testing. Evaluatie gebeurt op nauwkeurigheid, ondersteund door 
+% hyperparameter tuning. Verwacht wordt dat deep learning-modellen superieure resultaten zullen opleveren, met potentieel belang voor 
+% natuurbehoudsorganisaties. Het onderzoek fungeert als oproep tot actie voor natuurbescherming.
+
+Geospatiale remote sensing biedt innovatieve methoden voor het monitoren van veranderingen in het landschap. 
+Dit onderzoek richt zich specifiek op de detectie en visualisatie van veranderingen in vegetatiebedekking in de stad Gent tussen 2020 en 2024.
+Hiervoor worden Sentinel-2 satellietbeelden gebruikt en geanalyseerd met behulp van machine learning-technieken. 
+Een geavanceerde machine learning-pijplijn wordt ontwikkeld om deze veranderingen te detecteren en te interpreteren.
+De onderzoeksmethode omvat een vergelijkende studie van diverse algoritmen, waaronder Support Vector Machines (SVM), Random Forests, 
+Convolutional Neural Networks (CNN), Siamese Networks en Vision Transformers. Preprocessing van de data, 
+zoals herschalen en semantische segmentatie, zorgt ervoor dat de inputdata consistent en geschikt is voor training. 
+De algoritmen worden beoordeeld op nauwkeurigheid, consistentie en vermogen om visueel interpreteerbare resultaten te genereren.
+Een belangrijke evaluatie metriek is de Vegetation Condition Index (VCI), die veranderingen in vegetatiebedekking kwantificeert door 
+Normalized Difference Vegetation Index (NDVI)-waarden te vergelijken. Daarnaast worden metrieken zoals precision, recall en 
+Intersection over Union (IoU) toegepast om de prestaties van de modellen te beoordelen. Het onderzoek beoogt niet alleen inzicht te bieden 
+in de geschiktheid van verschillende machine learning-modellen voor geospatiale change detection, maar ook bij te dragen aan de 
+toepassing van AI in stedelijke milieuanalyse en besluitvorming. Het onderzoek fungeert ook als oproep tot actie voor natuurbehoud in steden.
+
+% Dit onderzoek combineert innovatieve technologieën, 
+% zoals deep learning en remote sensing, met een focus op praktische toepassingen in een stedelijke context, en biedt daarmee een waardevolle 
+% bijdrage aan de verdere ontwikkeling van Geo-ICT en machine learning.
+
 \end{abstract}
 
 \tableofcontents

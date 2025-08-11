@@ -5,32 +5,176 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}%
 \label{ch:inleiding}
 
-De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
+% De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
 
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
+% \begin{itemize}
+%   \item context, achtergrond
+%   \item afbakenen van het onderwerp
+%   \item verantwoording van het onderwerp, methodologie
+%   \item probleemstelling
+%   \item onderzoeksdoelstelling
+%   \item onderzoeksvraag
+%   \item \ldots
+% \end{itemize}
+
+% Geo-ICT is de toepassing van informatie- en communicatietechnologie in de geografie. Een belangrijk component van Geo-ICT is het programma GIS.
+% Geografische informatiesystemen (GIS) zijn digitale systemen die geografische gegevens analyseren, visualiseren en beheren om ruimtelijke 
+% patronen en relaties te begrijpen. Het wordt vandaag de dag door bedrijven gebruikt in verschillende sectoren. 
+% Nu er vraag is naar GIS-applicaties, zijn er ook ondernemingen die zich specialiseren in deze trend, zoals bijvoorbeeld het bedrijf GeoAI. 
+% Zij combineren Geo-ICT met het experimentele veld van machine learning. Dit kan ingezet worden om verschillende doeleinden te bereiken, zoals
+% bijvoorbeeld automatische kaartgeneratie, voorspellende modellering, enz\ldots.
+% \newline
+% Het thema waar ik me op focus is geospatiale remote sensing change detection. Dit richt zich op het ontdekken van veranderingen in een bepaald landschap.
+% Hier komt de sterkte van AI naar boven. Het is in staat patronen te ontdekken die wij als mensen moeilijk begrijpen.
+% Deze studie is gericht op het bestuderen van de aanwezigheid van vegetatie in de stad Gent tussen de periode van 2020-2024. 
+% De dataset bestaat uit luchtfoto's genomen door het agentschap digitaal Vlaanderen (middenschalige orthofotobedekking van het Vlaamse Gewest). 
+% Tijdens het onderzoek worden verschillende machine learning algoritmes (Support Vector Machines (SVM), Random Forests, 
+% Convolutional Neural Networks (CNNs), Siamese Networks en Vision transformer) getest op de dataset. 
+% Het model moet in staat zijn vegetatie te detecteren en ook het verschil tussen de twee periodes te visualiseren. 
+% Het open-sourceplatform QGIS wordt gebruikt om de data te verkrijgen en te visualiseren.
+
+% Change detection (CD) is het waarnemen van verandering in een bepaald gebied aan de hand van afbeeldingen genomen op verschillende tijden. 
+% Machine learning wordt al geruime tijd toegepast op CD. Vroeger lag de focus meer op tradionele pixel based methodes. 
+% Maar in de laatste jaren heeft de opkomst van verschillende nieuwere algoritmen het veld verbreed. Zo worden verschillende studies gedaan 
+% rond de impact van deep learning neurale netwerken op CD, zoals het onderzoek van Bai e.a. (2022) over Deep Learning Change Detection (DLCD).
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}%
 \label{sec:probleemstelling}
 
-Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's'', systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+% Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's'', systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+
+Klimaatverandering is onbetwistbaar het centrale thema van de 21e eeuw, met de opwarming van de aarde die een scala aan negatieve 
+effecten met zich meebrengt, waaronder stijgende zeespiegels en drogere klimaten. Deze droogte draagt bij aan een toename van 
+bosbranden wereldwijd, wat des te zorgwekkender is gezien de cruciale rol die bossen spelen bij het tegengaan van klimaatverandering. 
+Tegelijkertijd worden we geconfronteerd met een groeiende overbevolking, wat resulteert in een toenemende behoefte aan huisvesting 
+en de daaropvolgende afname van natuurlijke habitat ‘s wereldwijd. Het is daarom van essentieel belang om stedelijke ontwikkeling en behoud 
+van natuurlijke omgevingen hand in hand te laten gaan.
+\newline
+\newline
+In 2022 stelde de Europese Commissie de natuurherstel wet voor. Die verplicht lidstaten om tegen 2030 tot 30 procent van 
+verwaarloosde ecosystemen te herstellen. De wet werd uiteindelijk goedgekeurd op 17 juni 2024. Een bijkomende maatregel in dit besluit is een
+oproep naar meer groene ruimtes in steden.
+Verschillende onderzoeken zoals \textcite{bajirao2015importance} en \textcite{Birch_2020} tonen aan dat een groene omgeving een positief effect heeft op 
+menselijk welzijn. Tijdens de zomermaanden zorgt stedelijke infrastructuur voor 
+hogere temperaturen. In contrast blijkt dat vegetatie juist tot een lagere omgevingstemperatuur leidt \autocite{vuckovic2017studies}.
+In België en meer specifiek Vlaanderen is er ook een groot grondwater probleem. Door de verharding van de grond sijpelt regenwater moeilijker door. 
+Dit heeft negatieve gevolgen zoals mogelijke overstromingen. Meer vegetatie zorgt voor betere grondwater doorsijpeling. 
+Vegetatie bevordert ook de zuivering van de lucht. Luchtvervuiling is ondanks lage-emissiezones in steden, nog altijd een probleem.
+Meer vegetatie betekend een betere luchtkwaliteit.
+\newline
+\newline
+Deze bevindingen onderstrepen het belang van het integreren van groene ruimtes in stadsplanning en ontwikkeling. 
+In lijn hiermee richt deze studie zich op het observeren van de ontwikkeling van vegetatie in stedelijke omgevingen, met als doel inzicht 
+te krijgen in hoe deze omgevingen evolueren en hoe ze kunnen worden verbeterd ten behoeve van zowel de menselijke gezondheid als de natuur.
+Dit onderzoek is gericht naar steden en gemeentes om een beter inzicht te krijgen wat voor impact beleid heeft op de natuur.
+\newline
+\newline
+
+% Klimaatverandering is onbetwistbaar het centrale thema van de 21e eeuw, met de opwarming van de aarde die een scala aan negatieve 
+% effecten met zich meebrengt, waaronder stijgende zeespiegels en drogere klimaten. Deze droogte draagt bij aan een toename van 
+% bosbranden wereldwijd, wat des te zorgwekkender is gezien de cruciale rol die bossen spelen bij het tegengaan van klimaatverandering. 
+% Tegelijkertijd worden we geconfronteerd met een groeiende overpopulatie, wat resulteert in een toenemende behoefte aan huisvesting 
+% en de daaropvolgende afname van natuurlijke habitats wereldwijd. Het is daarom van essentieel belang om stedelijke ontwikkeling en behoud 
+% van natuurlijke omgevingen hand in hand te laten gaan.
+% \newline
+% \newline
+% Bepaalde onderzoeken zoals \textcite{Birch_2020}, benadrukt de positieve invloed van natuurlijke omgevingen in stedelijke gebieden op 
+% de mentale gezondheid van de bewoners. In België, en met name in Vlaanderen, speelt bovendien een ernstig probleem met betrekking tot grondwaterbeheer. 
+% Door toenemende bodemverharding wordt de infiltratie van regenwater belemmerd, wat kan leiden tot negatieve gevolgen zoals een 
+% verhoogd risico op overstromingen. Een toename van vegetatie bevordert echter de waterdoorlaatbaarheid van de bodem, waardoor deze 
+% problematiek gedeeltelijk kan worden verzacht. Tegelijkertijd kan de aanwezigheid van stedelijke infrastructuur leiden tot verhoogde 
+% temperaturen tijdens de zomermaanden. Daartegenover staat dat vegetatie doorgaans geassocieerd wordt met lagere omgevingstemperaturen 
+% in vergelijking met stedelijke structuren \autocite{vuckovic2017studies}.
+% \newline
+% \newline
+% Deze bevindingen onderstrepen het belang van het integreren van groene ruimtes in stadsplanning en ontwikkeling. 
+% In lijn hiermee richt dit onderzoek zich op het observeren van de ontwikkeling van vegetatie in stedelijke omgevingen, met als doel inzicht 
+% te krijgen in hoe deze omgevingen evolueren en hoe ze kunnen worden verbeterd ten behoeve van zowel de menselijke gezondheid als de natuur.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}%
 \label{sec:onderzoeksvraag}
 
-Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+% Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+
+% Deze studie is een verglijkende proef tussen verschillende machine learning modellen om veranderingen te detecteren aan vegetatie 
+% in een stedelijke omgeving over een bepaalde tijdsperiode. De modellen zijn opgedeeld in twee groepen. De nieuwere deep learning modellen en de 
+% origenele algoritmen.
+
+Dit onderzoek richt zich op de vraag welk machine learning-model het meest geschikt is voor het nauwkeurig detecteren en visualiseren 
+van veranderingen in de aanwezigheid van vegetatie in de stad Gent tussen 2020 en 2024, met behulp van remote sensing change detection.
+\newline
+Ondersteunend met deze hoofdvraag zoek ik naar antwoorden voor een aantal deelvragen. Welke objectklasse (vegetatie, bebouwing, wegen enz.) 
+tonen de grootste veranderingen in percentage tussen de twee tijdstippen? Wat is het verschil tussen handmatige (traditionele ML) en 
+automatische feature extractie (Deep Learning)? Wat voor preprocessing stappen zijn nodig voor een ideale dataset? Wat zijn de belangrijkste 
+evaluatie criteria bij het beoordelen van een model? Is één dataset genoeg om tot een generaliseerbaar model te komen?
+
+% Dit onderzoek richt zich op de vraag welk machine learning-model het meest geschikt is voor het nauwkeurig detecteren en visualiseren 
+% van veranderingen in de aanwezigheid van vegetatie in de stad Gent tussen 2020 en 2024, met behulp van remote sensing change detection.
+% Om deze hoofdvraag te beantwoorden, worden verschillende deelaspecten geanalyseerd. Allereerst wordt onderzocht welke objectklasse 
+% (vegetatie, bebouwing of wegen) de grootste veranderingen vertoont in percentage tussen de twee onderzochte tijdstippen. 
+% Daarnaast wordt nagegaan of er specifieke patronen in de vegetatieverandering te identificeren zijn, zoals groei, afname of stabiliteit 
+% in bepaalde delen van de stad. Hierbij wordt tevens bekeken of er ruimtelijke structuren of clusters in deze veranderingen aanwezig zijn.
+% \newline
+% \newline
+% Een ander belangrijk aspect van de studie is de vergelijking tussen handmatige feature-extractie en automatische extractie op basis van 
+% deep learning, waarbij de impact van beide methoden op de uiteindelijke resultaten wordt geanalyseerd. Daarnaast wordt onderzocht welke 
+% evaluatiemethoden het meest geschikt zijn om de prestaties van de modellen te beoordelen en hoe de balans tussen nauwkeurigheid en 
+% andere prestatie-indicatoren, zoals recall en precision, wordt gemeten.
+% \newline
+% Verder wordt bekeken welke criteria bepalen of een model als `acceptabel' wordt beschouwd binnen de context van change detection en of 
+% één dataset voldoende is om de generaliseerbaarheid van het model te waarborgen. Hierbij wordt ook aandacht besteed aan mogelijke bias 
+% of beperkingen in de gebruikte datasets en hoe hiermee kan worden omgegaan. Tot slot wordt geanalyseerd welke preprocessing-stappen 
+% nodig zijn om de datasets geschikt te maken voor input in de machine learning-modellen.
+% \newline
+% Door middel van deze deelvragen wordt een systematische benadering gehanteerd om de effectiviteit en toepasbaarheid van verschillende 
+% machine learning-modellen voor geospatiale change detection te evalueren.
+
+
+
+% De onderzoeksvraag: Welk machine learning-model is het meest geschikt voor het nauwkeurig detecteren en visualiseren van de
+% veranderingen in aanwezigheid van vegetatie in de stad Gent tussen 2020 en 2024, met behulp van remote sensing change detection?
+% \newline
+% De deelvragen: 
+% \newline
+% - Welke object klasse (vegetatie, bebouwing, wegen enz \ldots) toont de grootste veranderingen in percentage tussen de twee tijdstippen?
+% \newline
+% - Zijn er specifieke patronen in de veranderingen, zoals groei, afname of stabiliteit van groen in bepaalde delen van de stad?
+% \newline
+% - Zijn er ruimtelijke patronen in de veranderingen van vegetatie in de stad Gent?
+% \newline
+% - Is er een verschil tussen handmatige feature-extractie en automatische extractie op basis van deep learning, en wat is de impact hiervan op de resultaten?
+% \newline
+% - Welke evaluatie methoden zijn het meest geschikt om de prestaties van het model te beoordelen?
+% \newline
+% - Hoe wordt de balans gemeten tussen nauwkeurigheid en andere prestatie-indicatoren, zoals recall of precision?
+% \newline
+% - Welke criteria bepalen of een model als `acceptabel' wordt beschouwd?
+% \newline
+% - Is één dataset voldoende om de generaliseerbaarheid van het model te garanderen?
+% \newline
+% - Hoe wordt omgegaan met mogelijke bias of beperkingen in de gebruikte datasets?
+% \newline
+% - Welke preprocessing-stappen zijn nodig om de datasets geschikt te maken voor model input?
+
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}%
 \label{sec:onderzoeksdoelstelling}
 
-Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv.\ om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+% Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv.\ om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+
+% Het doel van deze studie is het beste model te selecteren voor een change detection architectuur om veranderingen in vegetatie te 
+% detecteren in een stedelijke omgeving. De succescriteria is de accuraatheid van het model. De snelheid is ook belangrijk maar niet 
+% doorslagevend.
+
+Dit is een vergelijkende studie met als doel het beste model te selecteren voor een change detecion architectuur om veranderingen in
+vegetatie te detecteren in een stedelijke omgeving. Het resultaat zal een machine learning pipeline zijn bestaande uit het best 
+scorende model. 
+\newline
+% Voor de evaluatie van de verschillende machine learning-modellen worden meerdere prestatie-indicatoren gehanteerd. 
+% De Vegetation Condition Index (VCI) wordt als primaire metriek gebruikt om veranderingen in vegetatiebedekking te kwantificeren door 
+% de Normalized Difference Vegetation Index (NDVI)-waarden van t₁ en t₂ met elkaar te vergelijken. Daarnaast worden aanvullende 
+% evaluatiemethoden toegepast, waaronder confusion matrix-gebaseerde metrieken zoals precision en recall, evenals Intersection over Union (IoU)
+% om de nauwkeurigheid van de voorspelde veranderingen te beoordelen.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}%
 \label{sec:opzet-bachelorproef}
@@ -40,10 +184,15 @@ Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor suc
 % die je kan aanvullen/aanpassen in functie van je eigen tekst.
 
 De rest van deze bachelorproef is als volgt opgebouwd:
-
+\newline
+\newline
 In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
 
 In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+
+In Hoofdstuk~\ref{ch:model-evaluatie} worden de verschillende evaluatie technieken besproken om de verandering tussen beide tijdstippen te bestuderen. 
+
+In Hoofdstuk~\ref{ch:model-resultaten} worden de resultaten van alle modellen weergeven.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
