@@ -33,16 +33,30 @@
 % Wie zijn bachelorproef in het Nederlands schrijft, kan dit negeren, de inhoud
 % wordt niet in het document ingevoegd.
 
-\IfLanguageName{english}{%
-\selectlanguage{dutch}
-\chapter*{Samenvatting}
-\lipsum[1-4]
-\selectlanguage{english}
-}{}
+% \IfLanguageName{english}{%
+% \selectlanguage{dutch}
+% \chapter*{Samenvatting}
+% \lipsum[1-4]
+% \selectlanguage{english}
+% }{}
 
 %%---------- Samenvatting -----------------------------------------------------
 % De samenvatting in de hoofdtaal van het document
 
 \chapter*{\IfLanguageName{dutch}{Samenvatting}{Abstract}}
 
-\lipsum[1-4]
+Het abstract wordt uitgewerkt in een latere versie van de BP
+
+% Geospatiale remote sensing biedt innovatieve methoden voor het monitoren van veranderingen in het landschap. 
+% Dit onderzoek richt zich specifiek op de detectie en visualisatie van veranderingen in vegetatiebedekking in de stad Gent tussen 2020 en 2024.
+% Hiervoor worden Sentinel-2 satellietbeelden gebruikt en geanalyseerd met behulp van machine learning-technieken. 
+% Een geavanceerde machine learning-pijplijn wordt ontwikkeld om deze veranderingen te detecteren en te interpreteren.
+% De onderzoeksmethode omvat een vergelijkende studie van diverse algoritmen, waaronder Support Vector Machines (SVM), Random Forests, 
+% Convolutional Neural Networks (CNN), Siamese Networks en Vision Transformers. Preprocessing van de data, 
+% zoals herschalen en semantische segmentatie, zorgt ervoor dat de inputdata consistent en geschikt is voor training. 
+% De algoritmen worden beoordeeld op nauwkeurigheid, consistentie en vermogen om visueel interpreteerbare resultaten te genereren.
+% Een belangrijke evaluatie metriek is de Vegetation Condition Index (VCI), die veranderingen in vegetatiebedekking kwantificeert door 
+% Normalized Difference Vegetation Index (NDVI)-waarden te vergelijken. Daarnaast worden metrieken zoals precision, recall en 
+% Intersection over Union (IoU) toegepast om de prestaties van de modellen te beoordelen. Het onderzoek beoogt niet alleen inzicht te bieden 
+% in de geschiktheid van verschillende machine learning-modellen voor geospatiale change detection, maar ook bij te dragen aan de 
+% toepassing van AI in stedelijke milieuanalyse en besluitvorming. Het onderzoek fungeert ook als oproep tot actie voor natuurbehoud in steden.

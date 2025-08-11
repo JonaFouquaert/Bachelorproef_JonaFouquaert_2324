@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.7.11)  4 DEC 2023 11:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.7.11)  19 DEC 2024 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,26 +1287,26 @@ Package csquotes Info: Redefining alias 'default' -> 'dutch'.
 (FouquaertJona-BPvoorstel.aux)
 \openout1 = `FouquaertJona-BPvoorstel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
 Package biblatex Info: ... file 'dutch-apa.lbx' found.
 
@@ -1331,15 +1331,23 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `FouquaertJona-BPvoorstel.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'FouquaertJona-BPvoorstel.bbl' not found.
+Package biblatex Info: ... file 'FouquaertJona-BPvoorstel.bbl' found.
+ (FouquaertJona-BPvoorstel.bbl
 
-No file FouquaertJona-BPvoorstel.bbl.
-Package biblatex Info: Reference section=0 on input line 56.
-Package biblatex Info: Reference segment=0 on input line 56.
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                koch2015ssiamese
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 55.
+Package biblatex Info: Reference segment=0 on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 56.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 55.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1374,38 +1382,48 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 55.
 (FouquaertJona-BPvoorstel.out) (FouquaertJona-BPvoorstel.out)
 \@outlinefile=\write4
 \openout4 = `FouquaertJona-BPvoorstel.out'.
 
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 60.
+(Font)              scaled to size 9.00096pt on input line 82.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 60.
+(Font)              scaled to size 6.00064pt on input line 82.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 60.
+(Font)              scaled to size 5.00053pt on input line 82.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 60.
+(Font)              scaled to size 8.99904pt on input line 82.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 60.
+(Font)              scaled to size 5.99936pt on input line 82.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 60.
+(Font)              scaled to size 4.99947pt on input line 82.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 60.
+ mdframed uses option nobreak mdframed on input line 82.
 
 (FouquaertJona-BPvoorstel.toc)
 \tf@toc=\write5
 \openout5 = `FouquaertJona-BPvoorstel.toc'.
 
  (voorstel-inhoud.tex
-Overfull \hbox (1.94792pt too wide) in paragraph at lines 23--42
+Overfull \hbox (17.16484pt too wide) in paragraph at lines 23--50
+\TU/Montserrat(2)/m/n/10 belangrijk component van Geo-ICT is het programma
+ []
+
+
+Overfull \hbox (0.79901pt too wide) in paragraph at lines 23--50
+\TU/Montserrat(2)/m/n/10 digitale systemen die geografische gegevens ana-
+ []
+
+
+Overfull \hbox (1.94792pt too wide) in paragraph at lines 23--50
 \TU/Montserrat(2)/m/n/10 lende sectoren. Nu er vraag is naar GIS-applicaties,
  []
 
 
-Overfull \hbox (10.87456pt too wide) in paragraph at lines 85--98
-\TU/Montserrat(2)/m/n/10 ject detection en post-analyse. Preprocessing wordt
+Overfull \hbox (12.13234pt too wide) in paragraph at lines 23--50
+[]\TU/Montserrat(2)/m/n/10 De onderzoeksvraag: Welk machine learning-model
  []
 
 File: graphics//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1413,15 +1431,100 @@ File: graphics//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 [1
 
 
-])
+]
 
-LaTeX Warning: Empty bibliography on input line 68.
+LaTeX Warning: Citation 'koch2015siamese' on page 2 undefined on input line 79.
+
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 69--102
+\TU/Montserrat(2)/m/n/10 rale netwerken worden gezien als één van de
+ []
+
+
+Overfull \hbox (1.6379pt too wide) in paragraph at lines 69--102
+\TU/Montserrat(2)/m/n/10 voor visuele taken. Oorspronkelijk geïntroduceerd
+ []
+
+
+Overfull \hbox (23.0537pt too wide) in paragraph at lines 69--102
+\TU/Montserrat(2)/m/n/10 formers (ViTs) zijn, dankzij de transformer-architectu
+ur,
+ []
+
+
+Overfull \hbox (0.99902pt too wide) in paragraph at lines 128--151
+\TU/Montserrat(2)/m/n/10 ontwikkelen van een machine learning-pijplijn die
+ []
+
+
+Overfull \hbox (2.36902pt too wide) in paragraph at lines 128--151
+\TU/Montserrat(2)/m/n/10 schillende machine learning modellen getest wor-
+ []
 
 File: graphics//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <graphics//HOGENT_Logo_Pos_rgb.png>
-[2
+[2])
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 90.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 7.20076pt on input line 90.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 5.80061pt on input line 90.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 90.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 7.19922pt on input line 90.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 5.79938pt on input line 90.
 
-] 
+Overfull \hbox (2.98257pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/it/10 spatial Information Science\TU/Montserrat(2)/m/n/10 ,
+ \TU/Montserrat(2)/m/it/10 26\TU/Montserrat(2)/m/n/10 (3), 262–288.
+ []
+
+
+Overfull \hbox (23.89398pt too wide) in paragraph at lines 90--90
+[][]\TU/Montserrat(2)/m/n/10 Breiman, L. (2001). Random Forests. \TU/Montserrat
+(2)/m/it/10 Machine Learning\TU/Montserrat(2)/m/n/10 ,
+ []
+
+
+Overfull \hbox (0.1971pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/n/10 Shah, R. (1993). Signature Verification using
+ []
+
+
+Overfull \hbox (83.02061pt too wide) in paragraph at lines 90--90
+[][][][][] [] [][][][][] [] [][][][] [] [][][][] [] [][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] [][]
+ []
+
+
+Overfull \hbox (27.40399pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/n/10 multi-temporal high-resolution remote-sensing
+ []
+
+
+Overfull \hbox (2.34927pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/it/10 Learning with Scikit-Learn, Keras, and Ten-
+ []
+
+
+Overfull \hbox (1.15257pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/it/10 Computing and Applications\TU/Montserrat(2)/m/n/10 , 
+\TU/Montserrat(2)/m/it/10 35\TU/Montserrat(2)/m/n/10 (19), 13941–
+ []
+
+
+Overfull \hbox (1.32922pt too wide) in paragraph at lines 90--90
+\TU/Montserrat(2)/m/n/10 data. \TU/Montserrat(2)/m/it/10 International Journal 
+of Remote Sen-
+ []
+
+File: graphics//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
+<graphics//HOGENT_Logo_Pos_rgb.png>
+[3] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (FouquaertJona-BPvoorstel.aux)
 
@@ -1429,7 +1532,7 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `FouquaertJona-BPvoorstel.out' has not change
 d.
-(rerunfilecheck)             Checksum: ED752858342F4E70D178002D8824F325;518.
+(rerunfilecheck)             Checksum: 2486E0888F0C4C851FED5AD1F3E3A95F;616.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                FouquaertJona-BPvoorstel
@@ -1440,12 +1543,12 @@ Package logreq Info: Writing requests to 'FouquaertJona-BPvoorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27341 strings out of 411463
- 513690 string characters out of 5818007
- 1874290 words of memory out of 5000000
- 47238 multiletter control sequences out of 15000+600000
- 514680 words of font info for 86 fonts, out of 8000000 for 9000
+ 27680 strings out of 411463
+ 522183 string characters out of 5818007
+ 1876290 words of memory out of 5000000
+ 47565 multiletter control sequences out of 15000+600000
+ 515921 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,128p,699b,3838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,128p,699b,5474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on FouquaertJona-BPvoorstel.pdf (2 pages).
+Output written on FouquaertJona-BPvoorstel.pdf (3 pages).
